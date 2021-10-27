@@ -34,7 +34,7 @@
           role="button"
           aria-expanded="false"
           aria-controls="expand"
-          >Post New Jobs</a
+          >Post New Jobs.</a
         >
       </div>
       <div class="row">
