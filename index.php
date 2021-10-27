@@ -39,7 +39,7 @@
       </div>
       <div class="row">
         <div class="col p-3">
-          <div class="collapse collapse-vertical" id="posted">
+          <div class="collapse collapse-horizontal" id="posted">
             <div class="card card-body">
               <form action="config.php" method="POST">
                 <div class="mb-3">
