@@ -15,10 +15,10 @@ echo"";
 if(isset($_POST['submit'])){
     $name=$_POST['name'];
     $email=$_POST['email'];
-    $number=$_POST['phone_no'];
+    $number=$_POST['phone'];
     $password=$_POST['password'];
 
-    $sql = "INSERT INTO users (Name, email,password,phone_no) VALUES ('$name', '$email', '$password', '$number')";
+    $sql = "INSERT INTO users (Name, email,phone,password) VALUES ('$name', '$email', '$number', '$password')";
     if(mysqli_query($conn,$sql)){
         echo "Records inserted successfully.";
         header("location:login.php");
