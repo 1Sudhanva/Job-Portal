@@ -28,7 +28,7 @@
     <div class="content">
       <div class="p-3">
         <a
-          class="btn btn-primary"
+          class="btn btn-success"
           data-bs-toggle="collapse"
           href="#posted"
           role="button"
