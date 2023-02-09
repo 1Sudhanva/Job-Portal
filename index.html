@@ -5,115 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
       crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Dashboard | Job Portal</title>
+    <style>
+      body {
+        background-image: url(../images/logbg.jpg);
+        color: black;
+      }
+      .row {
+        margin-top: 7%;
+        padding: 3%;
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border-radius: 10px;
+        border: 1px solid white;
+      }
+      .col-6 {
+        margin-top: 5%;
+        text-align: center;
+      }
+      a {
+        color: #fd7e14;
+      }
+    </style>
+    <title>Login | Job Portal</title>
   </head>
   <body>
-    <nav class="navbar sticky-top navbar-dark bg-dark h1">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Portal</a>
-      </div>
-    </nav>
-    <div class="sidebar">
-      <a class="active" href="">Jobs</a>
-      <a href="html/jobs.html">Candidates Applied</a>
-      <a href="html/career.html">Career</a>
-      <a href="html/role.html">Role</a>
-    </div>
-    <div class="content">
-      <div class="p-3">
-        <a
-          class="btn btn-success"
-          data-bs-toggle="collapse"
-          href="#posted"
-          role="button"
-          aria-expanded="false"
-          aria-controls="expand"
-          >Post New Jobs</a
-        >
-      </div>
+    <div class="container">
       <div class="row">
-        <div class="col p-3">
-          <div class="collapse collapse-horizontal" id="posted">
-            <div class="card card-body">
-              <form>
-                <div class="mb-3">
-                  <label for="company name" class="form-label">
-                    Company Name
-                  </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="company name"
-                    aria-describedby="emailHelp"
-                    name="cname" />
-                </div>
-                <div class="mb-3">
-                  <label for="position" class="form-label">Position</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="position"
-                    name="pos" />
-                </div>
-                <div class="mb-3">
-                  <label for="descjob" class="form-label">Job Description</label
-                  ><br />
-                  <textarea
-                    name="descjob"
-                    id="descjob"
-                    cols="143"
-                    rows="5"
-                    name="Jdesc"></textarea>
-                </div>
-                <div class="mb-3">
-                  <label for="ctc" class="form-label">CTC</label>
-                  <input type="text" class="form-control" id="ctc" name="CTC" />
-                </div>
-                <button type="submit" class="btn btn-primary" name="job">
-                  Submit
-                </button>
-              </form>
-            </div>
-          </div>
+        <div class="col-6">
+          <a href="html/admin.html">
+            <img src="../images/admin.png" alt="login" />
+          </a>
+          <h1>Admin</h1>
+        </div>
+        <div class="col-6">
+          <a href="html/login.html">
+            <img src="../images/login.png" alt="login" />
+          </a>
+          <h1>Not Admin</h1>
         </div>
       </div>
-      <table class="table table-dark table-striped">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Company Name</th>
-            <th scope="col">Position</th>
-            <th scope="col">CTC</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td><a style="cursor: pointer">Tata Elxsi</a></td>
-            <td>Fresher Engineer</td>
-            <td>3.5 LPA</td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td>2</td>
-            <td><a style="cursor: pointer">Tata Motors</a></td>
-            <td>Product Designer</td>
-            <td>4.5 LPA</td>
-          </tr>
-        </tbody>
-      </table>
     </div>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"></script>
   </body>
 </html>
